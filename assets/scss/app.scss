@@ -1,0 +1,165 @@
+$button-color: lightblue;
+$button-hover-color: blue;
+$banner-color: darkblue;
+$list-color: #dddddd;
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.banner {
+  position: relative;
+  background-color: darkblue;
+  height: 50px;
+  margin-bottom: 2%;
+}
+.navBarLink {
+  height: 30px;
+  font-family: Arial;
+  color: white;
+  padding: 10px;
+  margin: 5px 5px;
+  float: right;
+  text-shadow: 2px 2px 1px black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+	  margin-top: 5%;
+    margin-left: 10%;
+}
+
+td, th {
+    border: 1px solid $list-color;
+    text-align: left;
+    padding: 8px;
+}
+
+/*tr:nth-child(even) {
+    background-color: $list-color;
+}*/
+
+tr .clicked {
+  font-weight: bold;
+}
+
+.button {
+    margin-left: 10%;
+    background-color: $button-color;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn {
+  margin-left : 20%;
+  background-color: $button-color;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: $button-hover-color;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $button-color;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   border: 1px dashed black;
+ }
+
+.dropdown-content a:hover {
+  background-color: $button-hover-color;
+}
+
+.dropdown a:hover {background-color: $button-hover-color}
+
+.show {display:block;}
+
+.button:hover {
+  background-color: $button-hover-color;
+}
+
+.ng-invalid {
+  border: 2px solid red;
+}
+
+.invalidMsg {
+  color: red;
+}
+fieldset {
+  width: 80%;
+  margin-left: 10%;
+  height: 60%;
+  border-radius: 20px;
+}
+legend {
+  margin: auto;
+  padding: 0px 10px;
+  margin-bottom: 10%;
+}
+.formField {
+  height: 50px;
+  width: 100%;
+}
+.formField .labelWrapper {
+  display: inline-block;
+  width: 20%;
+  margin-left: 20%;
+  padding-right: 5px;
+}
+.formField .inputWrapper {
+  display: inline-block;
+  width: 40%;
+}
+.formField .inputWrapper input {
+  width: 100%;
+}
+.buttonWrapper {
+  text-align: center;
+}
+
+.homeWrapper h1 {
+  text-align: center;
+  text-shadow: 2px 2px 3px $banner-color;
+}
+
+.homebody {
+  margin-left: 5%;
+  width: 85%;
+  border: 1px solid $banner-color;
+  padding: 5px;
+  border-radius:10px;
+}
+
+.homebody ul {
+  list-style-type: none;
+}
+.homebody ul li:hover {
+  border-left: 4px solid $banner-color;
+  padding-left: 5px;
+}
+
